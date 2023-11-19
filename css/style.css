@@ -193,11 +193,13 @@ header img {
 }
 
 .wrapper-one {
+    padding-top: 100px;
     background-color: whitesmoke;
 }
 
 .choose-text {
     text-align: center;
+    padding-bottom: 70px;
 }
 
 .choose-text p {
@@ -210,10 +212,12 @@ header img {
 
 .choose-text h4 {
     font-size: 30px;
+    font-family: Yantramanav, sans-serif;
 }
 
 .choose-text h5 {
     font-size: 30px;
+    font-family: Yantramanav, sans-serif;
 }
 
 .choose-box {
@@ -238,7 +242,54 @@ header img {
     border-radius: 5px;
     background-blend-mode: multiply;
     background-color: rgba(9, 29, 62, 0.63);
+    display: grid;
+    justify-content: center;
+    color: white;
 }
+.comtent-choose-us {
+    width: 300px;
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
+.comtent-choose-us  i {
+    font-size: 2rem;
+    background-color: blue;
+    border-radius: 100px;
+    padding: 20px;
+ }
+ .choose-us a {
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+ }
+ .choose-us p {
+    padding-top: 30px;
+ }
+ .box-inbetwn {
+    position: relative;
+    top: 70px;
+    width: 320px;
+    left: 40px;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 5px;
+    border-radius: 8px;
+ }
+ #chose-texter {
+    margin-top: 5px;
+    font-weight: 900;
+ }
+ .box-inbetwn i {
+    font-size: 2rem;
+ }
 
 #chose-one {
     background-image: url(/images/2-1.jpg);
@@ -248,9 +299,18 @@ header img {
     transition-delay: 10ms;
 
 }
+#hiden-chose-us {
+    visibility: hidden;
+}
 
-#chose-one:hover {
+#chose-one:hover  {
     background-blend-mode: multiply;
+}
+#chose-one:hover #hiden-chose-us {
+    visibility: visible;
+}
+#chose-one:hover .box-inbetwn {
+    visibility: hidden;
 }
 
 #chose-two {
@@ -258,11 +318,18 @@ header img {
     background-blend-mode: normal;
 }
 
-#chose-two:hover {
+#chose-two:hover  {
     background-blend-mode: multiply;
+}
+#chose-two:hover #hiden-chose-us {
+    visibility: visible;
+}
+#chose-two:hover .box-inbetwn {
+    visibility: hidden;
 }
 
 .countdown-div {
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -334,7 +401,7 @@ header img {
     right: 80px;
     display: flex;
     width: 600px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* border-radius: 10px; */
 }
 
@@ -344,10 +411,12 @@ header img {
 }
 
 .box-video {
-    background-color: white;
+    border: 1px solid black;
+    /* background-color: red; */
     text-align: center;
     width: 500px;
     height: 200px;
+    border-radius: 10px;
 
 }
 
@@ -796,9 +865,7 @@ sub {
     background-position: center;
     background-size: cover;
     display: flex;
-    /* flex-wrap: wrap; */
-    align-content: center;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #engaged {
@@ -807,23 +874,57 @@ sub {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: transparent;
+    opacity: 0.5;
+    color: white;
 }
-
-.enaged-div {
-    /* margin: 10px; */
-    width: 800px;
-    height: 400px;
-    /* background-color: purple; */
-}
-
-#sloider {
+#soig {
     display: flex;
+    position: relative;
+    left: 70px;
 }
-
-.engade-link {
-    margin: 10px;
-    background-color: red;
+.enaged-div {
+    /* background-color: red; */
+    width: 700px;
+    height: 500px;
+    /* margin: 5px auto; */
+}
+.wrapper-eight  a {
+    font-size: 15px;
+    background-color: rgb(16, 76, 186);
+    text-decoration: none;
+    padding: 50px;
+    border-radius: 5px;
+    color: white;
+}
+.text-icons {
+    /* background-color: peru; */
+    position: relative;
+    top: 120px;
+    left: 150px;
+    opacity: 1;
+}
+.icon-holder {
+    position: relative;
+    left: 160px;
+    top: 120px;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(16, 76, 186);
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+#icon-shift {
+    padding-top: 20px;
+    background-color: white;
+    position: relative;
+    left: 200px;
+    color: black;
+}
+.icon-holder i {
+    font-size: 80px;
 }
 .wrapper-nine {
     padding: 100px;
@@ -1293,6 +1394,85 @@ footer input {
     .airtle-box img {
         height: 200px;
     }
+    .wrapper-eight {
+        background-image: url(/images/5-5.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        background-blend-mode: multiply;
+    background-color: rgba(9, 29, 62, 0.63);
+    padding-bottom: 30px;
+    }
+    .wrapper-eight  a {
+        font-size: 15px;
+        background-color: rgb(16, 76, 186);
+        text-decoration: none;
+        padding: 50px;
+        border-radius: 5px;
+        color: white;
+    }
+    #engaged {
+        /* background-image: url(/images/41.png); */
+        background-image: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.9;
+        color: white;
+        text-align: justify;
+    }
+    #soig {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        left: 0px;
+        bottom: 50px;
+    }
+    .enaged-div {
+        /* background-color: red; */
+        width: 300px;
+        height: 350px;
+        /* margin: 5px auto; */
+    }
+    .text-icons {
+        /* background-color: peru; */
+        position: relative;
+        top: 100px;
+        left: 80px;
+        opacity: 1;
+        color: white;
+        z-index: -1;
+    }
+    .icon-holder {
+        position: relative;
+        left: 80px;
+        top: 10px;
+        height: 200px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(16, 76, 186);
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+    }
+    #icon-shift {
+        padding-top: 20px;
+        background-color: white;
+        position: relative;
+        left: 80px;
+        top: 20px;
+        color: black;
+    }
+    .icon-holder i {
+        font-size: 80px;
+    }
 
 
 
@@ -1340,6 +1520,65 @@ footer input {
     .content h1 {
         font-size: 30px;
     }
+    .choose-us {
+        background-image: url(/images/1-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 250px;
+        margin: 10px;
+        border-radius: 5px;
+        background-blend-mode: multiply;
+        background-color: rgba(9, 29, 62, 0.63);
+        display: grid;
+        justify-content: center;
+        color: white;
+    }
+    .box-inbetwn {
+        position: relative;
+        top: 70px;
+        width: 250px;
+        left: 25px;
+        height: 50px;
+        background-color: white;
+        border-bottom: 1px solid grey;
+        display: flex;
+        color: black;
+        justify-content: space-around;
+        align-content: space-around;
+        padding: 5px;
+        border-radius: 8px;
+     }
+     .wrapper-four {
+        background-color: #e6ecf8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 1px;
+    }
+    
+    .plan {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        padding: 40px;
+        border-radius: 10px;
+    }
+    #regular {
+        height: 480px;
+        background-color: #e6ecf8;
+        -webkit-box-shadow: -1px 0px 3px 1px #b1d3fc;
+        box-shadow: -1px 0px 3px 1px #b1d3fc;
+    }
+    
+    #Premium {
+        height: 500px;
+        background-color: white;
+        -webkit-box-shadow: -1px 0px 3px 1px #b1d3fc;
+        box-shadow: -1px 0px 3px 1px #b1d3fc;
+    }
 
     .small-p {
         font-size: 20px;
@@ -1352,5 +1591,83 @@ footer input {
     }
     .boy-girl {
         height: 200px;
+    }
+    .wrapper-eight {
+        background-image: url(/images/5-5.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        background-blend-mode: multiply;
+    background-color: rgba(9, 29, 62, 0.63);
+    }
+    .wrapper-eight  a {
+        font-size: 15px;
+        background-color: rgb(16, 76, 186);
+        text-decoration: none;
+        padding: 50px;
+        border-radius: 5px;
+        color: white;
+    }
+    #engaged {
+        /* background-image: url(/images/41.png); */
+        background-image: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.9;
+        color: white;
+        text-align: justify;
+    }
+    #soig {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        left: 0px;
+        bottom: 50px;
+    }
+    .enaged-div {
+        /* background-color: red; */
+        width: 300px;
+        height: 350px;
+        /* margin: 5px auto; */
+    }
+    .text-icons {
+        /* background-color: peru; */
+        position: relative;
+        top: 100px;
+        left: 10px;
+        opacity: 1;
+        color: white;
+        z-index: -1;
+    }
+    .icon-holder {
+        position: relative;
+        left: 10px;
+        top: 10px;
+        height: 200px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(16, 76, 186);
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+    }
+    #icon-shift {
+        padding-top: 20px;
+        background-color: white;
+        position: relative;
+        left: 10px;
+        top: 20px;
+        color: black;
+    }
+    .icon-holder i {
+        font-size: 80px;
     }
 }
