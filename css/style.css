@@ -1202,7 +1202,28 @@ footer input {
         -webkit-background-clip: text;
         background-clip: text;
     }
+    .wrapper-nine {
+        padding: 5px;
+    }
+    .aticle-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
     
+    .airtle-box {
+        width: 300px;
+        margin: 2px;
+    }
+    .airtle-box img {
+        height: 220px;
+    }
+    .footer-div {
+        width: 350px;
+        height: 300px;
+        margin:  10px;
+    }
 
 }
 
@@ -1329,17 +1350,40 @@ footer input {
         max-width: 400px;
         /* background-color: red; */
     }
+    .box-video {
+        /* border: 1px solid black; */
+        /* background-color: red; */
+        text-align: center;
+        width: 500px;
+        height: 150px;
+        /* border-radius: 10px; */
+    
+    }
 
     .video-box {
         position: relative;
         top: 0px;
-        right: 0px;
+        left: 15px;
+        height: 200px;
         display: flex;
         width: 300px;
         border: 1px solid black;
         /* border-radius: 10px; */
     }
-
+    .video-box i {
+        position: relative;
+        top: 20px;
+    }
+    .video-box h1 {
+        font-size: 4rem;
+        position: relative;
+        top: 40px;
+    
+    }
+    .video-box p {
+        position: relative;
+        top: 40px;
+    }
     .service-box {
         padding: 10px;
         display: flex;
@@ -1348,10 +1392,8 @@ footer input {
         align-content: center;
         color: white;
     }
-
     .service-div {
         margin: 10px;
-        /* background-color: red; */
         max-width: 500px;
     }
 
@@ -1370,10 +1412,14 @@ footer input {
     }
 
     .view-sliders {
+        display: grid;
+        justify-content: center;
         width: 400px;
+        color: white;
         height: 200px;
-        background-color:#041737;
+        background-color:#104cba;
     }
+
 
     .wrapper-three {
         background-blend-mode: multiply;
@@ -1526,7 +1572,8 @@ footer input {
     #circle-text {
         /* width: 400px; */
         width: 350px;
-        text-align: justify;
+        font-size: 1rem;
+        /* text-align: justify; */
     }
     .it-cust {
         display: inline-block;
@@ -1537,6 +1584,21 @@ footer input {
         /* max-width: fit-content; */
         margin: 0px;
     }
+    #circle-text h1 {
+        font-size: 25px;
+    }
+    
+    #circle-text h2 {
+        font-size: 25px;
+    }
+    
+    .p-tezt {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 15px;
+        color: gray;
+    }
+    
 
 
 
@@ -1591,7 +1653,7 @@ footer input {
         background-size: cover;
         height: 350px;
         width: 350px;
-        margin: 10px;
+        margin: 15px;
         border-radius: 5px;
         background-blend-mode: multiply;
         background-color: rgba(9, 29, 62, 0.63);
