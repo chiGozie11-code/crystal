@@ -119,4 +119,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// change toggle
+
+
+
+function changeTab(){
+  const changetab1 = document.querySelector("#tab-1");
+  const changetab2 = document.querySelector("#tab-2");
+  const btn1 = document.querySelector("#Year");
+  const btn2 = document.querySelector("#month");
+  btn1.addEventListener("click", ()=>{
+    changetab1.style.display = "none";
+    changetab2.style.display = "flex"
+    btn1.style.backgroundColor = "rgb(16, 76, 186)";
+    btn1.style.color = "white";
+    btn2.style.backgroundColor = "white";
+    btn2.style.color = "black";
+  });
+  btn2.addEventListener("click", ()=> {
+    changetab1.style.display = "flex";
+    changetab2.style.display = "none";
+    btn1.style.backgroundColor = "white";
+    btn1.style.color = "black";
+    btn2.style.backgroundColor = "rgb(16, 76, 186)";
+    btn2.style.color = "white";
+  })
+};
+
+
 

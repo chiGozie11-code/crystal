@@ -205,30 +205,40 @@
             <div class="owl-carousel" id="little-sliders">
                 <div class="slide">
                     <div class="service-sliders">
-                        <i class="fa-solid fa-building-columns"></i>
+                        <span>
+                            <i class="fa-solid fa-building-columns"></i>
                         <h1>healthcare</h1>
+                        </span>
                     </div>
                     <div class="service-sliders">
-                        <i class="fa-solid fa-arrows-to-eye" style="color: #129de2;"></i>
+                        <span>
+                            <i class="fa-solid fa-arrows-to-eye" style="color: #129de2;"></i>
                         <h1>healthcare</h1>
+                        </span>
                     </div>
                     <div class="service-sliders">
-                        <i class="fa-solid fa-bullseye" style="color: #2470f5;"></i>
+                        <span>
+                            <i class="fa-solid fa-bullseye" style="color: #2470f5;"></i>
                         <h1>healthcare</h1>
+                        </span>
                     </div>
                     <div class="service-sliders">
-                        <i class="fa-solid fa-globe" style="color: #1968f0;"></i>
+                        <span>
+                            <i class="fa-solid fa-globe" style="color: #1968f0;"></i>
                         <h1>healthcare</h1>
+                        </span>
                     </div>
                     <div class="service-sliders">
+                       <span>
                         <i class="fa-solid fa-note-sticky" style="color: #2671f2;"></i>
                         <h1>healthcare</h1>
+                       </span>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="service-sliders">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <h1>healthcare</h1>
+                        <span><i class="fa-solid fa-building-columns"></i>
+                            <h1>healthcare</h1></span>
                     </div>
                     <div class="service-sliders">
                         <i class="fa-solid fa-arrows-to-eye" style="color: #129de2;"></i>
@@ -325,46 +335,96 @@
         </div>
     </section>
     <section class="wrapper-four">
-        <div class="plan">
+        <div class="plan" id="taber-div">
             <img src="/images/shape_line.png">
             <span>OUR PRICING</span>
             <h2>Committed to giving
                 the best lowest in technology</h2>
             <div class="btn-links">
-                <div class="span-linkers" id="month">Monthly</div>
-                <div class="span-linkers">Yearly</div>
+                <div class="span-linkers" id="month"  onclick="changeTab()">Monthly</div>
+                <div class="span-linkers" id="Year" onclick="changeTab()">Yearly</div>
             </div>
         </div>
-        <div class="plan" id="regular">
-            <h4>Regular Plan</h4>
-            <sup>$</sup><span class="span-increaser">35</span><sub> /Monthly</sub>
-            <p>Resolve parties but why she shewing. She sang know now minute exact dear.</p>
-            <a href="#">choose plan</a>
-            <div class="cheron-div">
-                <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
-                <span>Unlimited Download</span><br>
-                <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
-                <span>Free One Year Support</span><br>
-                <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
-                <span>Free 40 GB Linux Hosting</span><br>
+        <div class="plan" id="tab-changer" >
+            <div class="tab-contenier" id="tab-1">
+                <div  id="regular" class="tab-content">
+                    <h4>Regular Plan</h4>
+                    <sup>$</sup><span class="span-increaser">35</span><sub> /Monthly</sub>
+                    <p>Resolve parties but why she shewing. She sang know now minute exact dear.</p>
+                    <a href="#">choose plan</a>
+                    <div class="cheron-div">
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Unlimited Download</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Free One Year Support</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Free 40 GB Linux Hosting</span><br>
+                    </div>
+                </div>
+                <div  id="Premium" class="tab-content">
+                    <h4>Premium Plan</h4>
+                    <sup>$</sup><span class="span-increaser">99</span><sub> /Monthly</sub>
+                    <p>Resolve parties but why she shewing. She sang know now minute exact dear.</p>
+                    <a href="#">choose plan</a>
+                    <div class="cheron-div">
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Unlimited install</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Unlimited Download</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Life time Support</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Premium 100 GB Linux Hosting</span><br>
+                    </div>
+                    
             </div>
         </div>
-        <div class="plan" id="Premium">
-            <h4>Premium Plan</h4>
-            <sup>$</sup><span class="span-increaser">99</span><sub> /Monthly</sub>
-            <p>Resolve parties but why she shewing. She sang know now minute exact dear.</p>
-            <a href="#">choose plan</a>
-            <div class="cheron-div">
-                <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
-                <span>Unlimited install</span><br>
-                <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
-                <span>Unlimited Download</span><br>
-                <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
-                <span>Life time Support</span><br>
-                <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
-                <span>Premium 100 GB Linux Hosting</span><br>
-            </div>
+
+
+
+        <div class="plan" id="tab-changer" >
+             <div class="tab-contenier" id="tab-2">
+                <div  id="regular" class="tab-content">
+                    <h4>Regular Plan</h4>
+                    <sup>$</sup><span class="span-increaser">159</span><sub> /Yearly</sub>
+                    <p>Resolve parties but why she shewing. She sang know now minute exact dear.</p>
+                    <a href="#">choose plan</a>
+                    <div class="cheron-div">
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Unlimited Download</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Free One Year Support</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Free 40 GB Linux Hosting</span><br>
+                    </div>
+                </div>
+                <div  id="Premium" class="tab-content">
+                    <h4>Premium Plan</h4>
+                    <sup>$</sup><span class="span-increaser">299</span><sub> /Yearly</sub>
+                    <p>Resolve parties but why she shewing. She sang know now minute exact dear.</p>
+                    <a href="#">choose plan</a>
+                    <div class="cheron-div">
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Unlimited install</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Unlimited Download</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Life time Support</span><br>
+                        <i class="fa-solid fa-circle-check" style="color: #1f64db;"></i>
+                        <span>Premium 100 GB Linux Hosting</span><br>
+                    </div>
+             </div>
+                
         </div>
+
+
+
+
+
+
+            
+
+            
 
     </section>
     <section class="wrapper-five">
