@@ -2117,7 +2117,7 @@ footer input {
         justify-content: center;
         align-content: center;
         padding: 0px;
-        height: 200vh;
+        height: 170vh;
     }
     #taber-div {
         position: relative;
@@ -2128,7 +2128,7 @@ footer input {
     }
     
     .plan {
-        background-color: red;
+        /* background-color: red; */
         width: 350px;
         height: 1000px;
         margin: 0px ;
@@ -2137,7 +2137,7 @@ footer input {
     }
     .tab-contenier {
         /* width: 200px; */
-        background-color: yellow;
+        /* background-color: yellow; */
         display: flex;
         flex-wrap: wrap;
     }
