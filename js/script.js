@@ -11,12 +11,24 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     touchDrag: true,
     mouseDrag: true,
-    onInitialized: startAnimation,
-    onTranslated: startAnimation,
+    // onInitialized: startAnimation,
+    // onTranslated: startAnimation,
+    onInitialized: animateText,
+    onTranslated: animateText,
 
 
   });
+  function animateText(event) {
+    // Remove the 'show' class from all text animations
+    $('.text-animation').removeClass('show');
+
+    // Add the 'show' class to the text animation in the current slide
+    var currentSlide = event.item.index + 1;
+    $('.owl-item:nth-child(' + currentSlide + ') .text-animation').addClass('show');
+  }
 });
+
+
 function startAnimation() {
   // Add and remove the 'animate__animated' class to restart the animation
   $('.owl-item.active h1, .owl-item.active p').removeClass('animate__animated').css('opacity', '0');
@@ -157,6 +169,39 @@ function changeTab() {
     btn2.style.color = "white";
   })
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Set the target number
+  const targetNumber = 847;
+
+
+  // Get the count element
+  const countElement = document.getElementById('count');
+
+  // Function to update the count
+  function updateCount(count) {
+    countElement.textContent = count;
+  }
+
+  // Function to start the count-up animation
+  function startCountUp() {
+    let count = 0;
+
+    // Update the count every 10 milliseconds
+    const intervalId = setInterval(function () {
+      count++;
+      updateCount(count);
+
+      // Stop the count-up animation when the target number is reached
+      if (count === targetNumber) {
+        clearInterval(intervalId);
+      }
+    }, 100);
+  }
+
+  // Start the count-up animation when the page is loaded
+  startCountUp();
+});
 
 
 
